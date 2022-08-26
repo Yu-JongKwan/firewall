@@ -1,0 +1,42 @@
+$ history
+   31   git config --global user.email "kan5076@naver.com"
+   32   git config --global user.name "JKYu"
+   11  mkdir git-test
+   19  git clone https://github.com/Yu-JongKwan/firstdev.git
+   22  cd firstdev/
+   24  vi requirements.txt
+   26  git add .
+   30  git commit -m "update re"
+   35  git push -u origin master
+
+-- 
+   36  git pull
+   37  ls
+--
+   39  git branch ## branch list
+   43  git branch new_branch
+   44  git branch
+   45  git checkout new_branch ## branch 이동
+--
+   47  vi requirements.txt
+   48  git add .
+   49  git commit -m "update re"
+   50  git push -u origin new_branch
+   52  git checkout master
+   53  git branch
+   54  git merge new_branch ## master branch merge
+   55  cat requirements.txt
+   59  git push -u origin master
+
+--
+   71  mkdir firewall
+   73  cd firewall/
+   74  ls
+   75  echo "# firewall" >> README.md
+   76  ls
+   78  git init
+   80  git add .
+   81  git commit -m "first commit"
+   82  git branch -M master   ## default branch 지정
+   83  git remote add origin https://github.com/Yu-JongKwan/firewall.git   ## github를 .git의 프로젝트 지정
+   84  git push -u origin master
